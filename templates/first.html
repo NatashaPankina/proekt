@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>{{title}}</title>
+</head>
+
+<body>
+  <style>
+    .site-header {
+      min-width: 100%;
+      height: 200px;
+      margin-bottom: 5px;
+      padding-top: 30px;
+      background: #54c5ee no-repeat center;
+      background-size: cover;
+      color: #ffffff;
+    }
+
+    .object {
+      position: absolute;
+    }
+
+    .van {
+      top: 10%;
+    }
+
+    .van1 {
+      top: 2%;
+      left: 94%;
+    }
+
+    .van2 {
+      top: 2%;
+      left: 81%;
+    }
+
+    .van3 {
+      top: 93%;
+      padding: 100px;
+    }
+
+    .van4 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20%;
+    }
+
+    .van5 {
+      top: 2%;
+      left: 2%;
+    }
+  </style>
+  <div>
+    <img class='object мят5' src="{{ url_for('static', filename='img/icon.png') }}" width="70" height="70" />
+    <h5 style="text-indent:75px; color:rgb(188, 188, 188)">ООО "Бездомные программисты"</h5>
+  </div>
+  <header class="site-header object van">
+    <div class="container object van">
+      <h1 style='text-indent:50px; font-size: 100px;'>Светик</h1>
+    </div>
+  </header>
+  <a href="/login" class="btn btn-info van1 object">
+    Войти
+  </a>
+  <a href="/register" class="btn btn-info van2 object">
+    Зарегистрироваться
+  </a>
+  <img class='van4' src="{{ url_for('static', filename='img/map.png') }}" />
+  <article class="van3 object">
+    <h5 style="text-indent:25px;">Наш кооператив ООО "Бездомные программисты" приветсвтвует вас! Этот сайт создан с
+      целью упрощения поиска <br />
+      олимпиадников в российской базе данных. С помощью нашей разработки вы сможете создать Excel таблицу с нужными вам
+      учениками, загрузить
+      таблицу Excel и работать уже с ней. Вам доступны функции добавления, удаления и изменения данных, а также
+      сортировка и
+      поиск записей по определённым полям. Мы надеемся, что наш проект поможет вам! Спасибо, что зашли на наш сайт!</h5>
+  </article>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
