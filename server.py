@@ -70,7 +70,7 @@ def konvert_output():
                         student.class_writing = row[3]
                         student.class_take = row[4]
                         student.school_id = db_sess.query(School.id).filter(row[5] == School.name).first()[0]
-                        student.status = row[6]
+                        student.status = row[6].lower()
                         student.olymp_id = db_sess.query(Olympiad.id).filter(row[7] == Olympiad.name).first()[0]
                         f, s, t = row[8].split()
                         student.user_id = db_sess.query(User.id).filter(f == User.surname, s == User.name, t == User.patronymic).first()[0]
